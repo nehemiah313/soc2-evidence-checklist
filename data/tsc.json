@@ -1,0 +1,891 @@
+{
+  "framework": "AICPA Trust Services Criteria",
+  "edition": "2017 Trust Services Criteria (TSP Section 100), with 2022 revised points of focus",
+  "total_criteria": 61,
+  "categories": {
+    "Security": {
+      "code": "CC",
+      "required": true,
+      "description": "Protection of information and systems against unauthorized access. The Common Criteria apply to every SOC 2 engagement."
+    },
+    "Availability": {
+      "code": "A1",
+      "required": false,
+      "description": "Information and systems are available for operation and use as committed or agreed."
+    },
+    "Processing Integrity": {
+      "code": "PI1",
+      "required": false,
+      "description": "System processing is complete, valid, accurate, timely, and authorized."
+    },
+    "Confidentiality": {
+      "code": "C1",
+      "required": false,
+      "description": "Information designated as confidential is protected as committed or agreed."
+    },
+    "Privacy": {
+      "code": "P",
+      "required": false,
+      "description": "Personal information is collected, used, retained, disclosed, and disposed of as committed and in line with privacy objectives."
+    }
+  },
+  "series": {
+    "CC1": "Control Environment",
+    "CC2": "Communication and Information",
+    "CC3": "Risk Assessment",
+    "CC4": "Monitoring Activities",
+    "CC5": "Control Activities",
+    "CC6": "Logical and Physical Access Controls",
+    "CC7": "System Operations",
+    "CC8": "Change Management",
+    "CC9": "Risk Mitigation",
+    "A1": "Availability",
+    "PI1": "Processing Integrity",
+    "C1": "Confidentiality",
+    "P": "Privacy"
+  },
+  "notes": [
+    "Security (Common Criteria) is mandatory for every SOC 2 engagement.",
+    "Availability, Processing Integrity, Confidentiality, and Privacy are included only when the entity commits to them in the engagement scope.",
+    "Type I reports assess control design at a point in time; Type II reports assess operating effectiveness over a period, typically 3 to 12 months.",
+    "Summaries and evidence suggestions are original plain-English guidance, not AICPA text. This dataset is a readiness aid, not an audit opinion."
+  ],
+  "criteria": [
+    {
+      "id": "CC1.1",
+      "category": "Security",
+      "series": "CC1",
+      "series_name": "Control Environment",
+      "title": "Integrity and ethical values",
+      "summary": "Leadership sets the tone: the company defines and demonstrates integrity and ethical values, and holds people to them.",
+      "typical_evidence": [
+        "Signed code of conduct",
+        "Ethics policy acknowledgment records",
+        "Board minutes showing values discussion"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC1.2",
+      "category": "Security",
+      "series": "CC1",
+      "series_name": "Control Environment",
+      "title": "Independent board oversight",
+      "summary": "Whoever governs the company (board, owners, advisors) oversees controls independently from day-to-day management.",
+      "typical_evidence": [
+        "Board charter or operating agreement",
+        "Meeting minutes showing oversight of security",
+        "Org chart showing reporting lines"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC1.3",
+      "category": "Security",
+      "series": "CC1",
+      "series_name": "Control Environment",
+      "title": "Structure, reporting lines, and responsibilities",
+      "summary": "The org chart is real: structures, reporting lines, and who owns which controls are defined, assigned, and kept current.",
+      "typical_evidence": [
+        "Current org chart",
+        "RACI or responsibility matrix",
+        "Job descriptions with security duties"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC1.4",
+      "category": "Security",
+      "series": "CC1",
+      "series_name": "Control Environment",
+      "title": "Commitment to competence",
+      "summary": "The company hires, trains, and retains people competent for their control responsibilities, including security training.",
+      "typical_evidence": [
+        "Hiring criteria for technical roles",
+        "Security awareness training completion records",
+        "Performance review templates"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC1.5",
+      "category": "Security",
+      "series": "CC1",
+      "series_name": "Control Environment",
+      "title": "Accountability for controls",
+      "summary": "People are held accountable for their control responsibilities, with consequences when controls fail.",
+      "typical_evidence": [
+        "Accountability language in role descriptions",
+        "Disciplinary policy",
+        "Management review records"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC2.1",
+      "category": "Security",
+      "series": "CC2",
+      "series_name": "Communication and Information",
+      "title": "Internal communication of control responsibilities",
+      "summary": "Control objectives and responsibilities are communicated internally so everyone knows what is expected of them.",
+      "typical_evidence": [
+        "All-hands or onboarding decks covering security",
+        "Internal wiki or policy portal",
+        "Acknowledgment logs"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC2.2",
+      "category": "Security",
+      "series": "CC2",
+      "series_name": "Communication and Information",
+      "title": "External communication with customers and partners",
+      "summary": "The company communicates system operation, commitments, and relevant control info to customers and business partners.",
+      "typical_evidence": [
+        "Status page and incident communications",
+        "Customer-facing security documentation",
+        "M SA or DPA security exhibits"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC2.3",
+      "category": "Security",
+      "series": "CC2",
+      "series_name": "Communication and Information",
+      "title": "Communication with regulators and authorities",
+      "summary": "The company knows which regulators and authorities matter and communicates with them as required, including breach notification duties.",
+      "typical_evidence": [
+        "Breach notification procedure",
+        "Regulatory contact list",
+        "Records of past notifications, if any"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC3.1",
+      "category": "Security",
+      "series": "CC3",
+      "series_name": "Risk Assessment",
+      "title": "Defined objectives for risk identification",
+      "summary": "Objectives are specific enough that risks to meeting them can actually be identified.",
+      "typical_evidence": [
+        "Documented security objectives",
+        "Risk assessment scope statement"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC3.2",
+      "category": "Security",
+      "series": "CC3",
+      "series_name": "Risk Assessment",
+      "title": "Risk identification and analysis",
+      "summary": "The company identifies and analyzes risks to achieving its objectives, and decides how to manage them.",
+      "typical_evidence": [
+        "Risk register",
+        "Risk assessment report",
+        "Risk treatment decisions"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC3.3",
+      "category": "Security",
+      "series": "CC3",
+      "series_name": "Risk Assessment",
+      "title": "Fraud risk assessment",
+      "summary": "Fraud gets its own look: incentives, pressures, and opportunities for fraud are assessed explicitly.",
+      "typical_evidence": [
+        "Fraud risk assessment section",
+        "Segregation of duties analysis",
+        "Whistleblower or reporting channel"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC3.4",
+      "category": "Security",
+      "series": "CC3",
+      "series_name": "Risk Assessment",
+      "title": "Assessment of significant changes",
+      "summary": "Big changes (new product, new vendor, new infrastructure, leadership change) trigger a fresh risk look.",
+      "typical_evidence": [
+        "Change-triggered risk review records",
+        "New vendor onboarding risk review"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC4.1",
+      "category": "Security",
+      "series": "CC4",
+      "series_name": "Monitoring Activities",
+      "title": "Ongoing and separate control evaluations",
+      "summary": "Controls are checked both continuously (monitoring) and periodically (separate evaluations like internal audits or pen tests).",
+      "typical_evidence": [
+        "Continuous monitoring dashboards",
+        "Penetration test reports",
+        "Internal audit or self-assessment records"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC4.2",
+      "category": "Security",
+      "series": "CC4",
+      "series_name": "Monitoring Activities",
+      "title": "Evaluation and communication of deficiencies",
+      "summary": "Control failures and gaps are identified, rated by severity, reported to the right people, and fixed on a timeline.",
+      "typical_evidence": [
+        "Deficiency log with severity ratings",
+        "Remediation tracking",
+        "Management reporting on open findings"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC5.1",
+      "category": "Security",
+      "series": "CC5",
+      "series_name": "Control Activities",
+      "title": "Control activities that mitigate risk",
+      "summary": "Control activities are chosen and built to actually mitigate the risks identified, not just check a box.",
+      "typical_evidence": [
+        "Control matrix mapping risks to controls",
+        "Control design documentation"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC5.2",
+      "category": "Security",
+      "series": "CC5",
+      "series_name": "Control Activities",
+      "title": "Technology general controls",
+      "summary": "IT general controls cover the tech stack: access, changes, operations, and data backup for the systems that matter.",
+      "typical_evidence": [
+        "IT general controls policy",
+        "Backup and restore test logs",
+        "Job scheduling and operations procedures"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC5.3",
+      "category": "Security",
+      "series": "CC5",
+      "series_name": "Control Activities",
+      "title": "Policies deployed through procedures",
+      "summary": "Policies are not shelfware: they are deployed through real procedures, assigned owners, and followed in practice.",
+      "typical_evidence": [
+        "Information security policy suite",
+        "Procedure documents with owners",
+        "Policy exception log"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC6.1",
+      "category": "Security",
+      "series": "CC6",
+      "series_name": "Logical and Physical Access Controls",
+      "title": "System boundaries protected against unauthorized access",
+      "summary": "The logical boundary of the system is defined and defended: firewalls, network segmentation, and edge controls keep outsiders out.",
+      "typical_evidence": [
+        "Network diagrams",
+        "Firewall rule reviews",
+        "VPC and segmentation documentation"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC6.2",
+      "category": "Security",
+      "series": "CC6",
+      "series_name": "Logical and Physical Access Controls",
+      "title": "Registration and authorization of new users",
+      "summary": "New users, both employees and external, are registered and their access authorized before they get in.",
+      "typical_evidence": [
+        "Access request and approval tickets",
+        "Onboarding checklist with access provisioning"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC6.3",
+      "category": "Security",
+      "series": "CC6",
+      "series_name": "Logical and Physical Access Controls",
+      "title": "Timely removal of access for departing users",
+      "summary": "When people leave or change roles, their access is removed or adjusted promptly, not whenever someone remembers.",
+      "typical_evidence": [
+        "Offboarding checklist with access revocation",
+        "Termination tickets with timestamps",
+        "Periodic access review showing leavers removed"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC6.4",
+      "category": "Security",
+      "series": "CC6",
+      "series_name": "Logical and Physical Access Controls",
+      "title": "Physical access restrictions",
+      "summary": "Physical access to facilities, data centers, and server rooms is restricted to authorized people.",
+      "typical_evidence": [
+        "Badge access logs",
+        "Data center SOC 2 report or attestation",
+        "Visitor logs"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC6.5",
+      "category": "Security",
+      "series": "CC6",
+      "series_name": "Logical and Physical Access Controls",
+      "title": "Protection against unauthorized asset disposal",
+      "summary": "Hardware and media leaving the company are tracked and sanitized so data does not walk out the door.",
+      "typical_evidence": [
+        "Asset disposal records",
+        "Drive destruction certificates",
+        "Media sanitization log"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC6.6",
+      "category": "Security",
+      "series": "CC6",
+      "series_name": "Logical and Physical Access Controls",
+      "title": "Role-based logical access and least privilege",
+      "summary": "Access follows roles and least privilege: people get the minimum access their job needs, enforced by the system.",
+      "typical_evidence": [
+        "Role-based access matrix",
+        "MFA enforcement evidence",
+        "Privileged access reviews"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC6.7",
+      "category": "Security",
+      "series": "CC6",
+      "series_name": "Logical and Physical Access Controls",
+      "title": "Controls over data transmission and portable media",
+      "summary": "Data in transit is protected (encryption), and movement of data onto portable media or outside the boundary is restricted.",
+      "typical_evidence": [
+        "TLS configuration evidence",
+        "DLP or egress control records",
+        "Encryption-in-transit documentation"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC6.8",
+      "category": "Security",
+      "series": "CC6",
+      "series_name": "Logical and Physical Access Controls",
+      "title": "Prevention of unauthorized software",
+      "summary": "Only approved software runs in the environment: unauthorized software is prevented or detected.",
+      "typical_evidence": [
+        "Approved software inventory",
+        "Endpoint protection console reports",
+        "Application allowlisting policy"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC7.1",
+      "category": "Security",
+      "series": "CC7",
+      "series_name": "System Operations",
+      "title": "Vulnerability identification and remediation",
+      "summary": "Vulnerabilities are found (scanning, threat intel) and fixed on a risk-based timeline.",
+      "typical_evidence": [
+        "Vulnerability scan reports",
+        "Patch records with timelines",
+        "Threat intel subscription or feed"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC7.2",
+      "category": "Security",
+      "series": "CC7",
+      "series_name": "System Operations",
+      "title": "Monitoring of system components",
+      "summary": "Infrastructure and software are monitored for anomalies: uptime, performance, and security signals.",
+      "typical_evidence": [
+        "SIEM or monitoring dashboards",
+        "Alerting rules and alert history",
+        "Log retention configuration"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC7.3",
+      "category": "Security",
+      "series": "CC7",
+      "series_name": "System Operations",
+      "title": "Security event triage and evaluation",
+      "summary": "Anomalies get triaged: the company evaluates whether something is a real security event and how bad it is.",
+      "typical_evidence": [
+        "Triage procedures",
+        "Event tickets with severity classification",
+        "Escalation records"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC7.4",
+      "category": "Security",
+      "series": "CC7",
+      "series_name": "System Operations",
+      "title": "Incident response",
+      "summary": "When a security event becomes an incident, the response plan kicks in: contain, eradicate, recover, learn.",
+      "typical_evidence": [
+        "Incident response plan",
+        "Tabletop exercise records",
+        "Past incident reports with lessons learned"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC7.5",
+      "category": "Security",
+      "series": "CC7",
+      "series_name": "System Operations",
+      "title": "Corrective actions from monitoring",
+      "summary": "Monitoring findings turn into fixes: corrective actions are identified, tracked, and verified.",
+      "typical_evidence": [
+        "Corrective action log",
+        "Verification of fix effectiveness"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC8.1",
+      "category": "Security",
+      "series": "CC8",
+      "series_name": "Change Management",
+      "title": "Controlled change management process",
+      "summary": "Changes to infrastructure, software, and procedures go through a controlled process: request, test, approve, implement, review.",
+      "typical_evidence": [
+        "Change tickets with approvals",
+        "Deployment pipeline with gates",
+        "Emergency change records"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "CC9.1",
+      "category": "Security",
+      "series": "CC9",
+      "series_name": "Risk Mitigation",
+      "title": "Business disruption risk mitigation",
+      "summary": "Risks of business disruption are identified and mitigated: continuity and disaster recovery are planned, not improvised.",
+      "typical_evidence": [
+        "Business continuity plan",
+        "Disaster recovery plan",
+        "BIAs for critical processes"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "CC9.2",
+      "category": "Security",
+      "series": "CC9",
+      "series_name": "Risk Mitigation",
+      "title": "Vendor and business partner risk management",
+      "summary": "Vendors and partners with access to the system are risk-assessed, contracted with security commitments, and monitored.",
+      "typical_evidence": [
+        "Vendor risk assessments",
+        "Vendor list with criticality ratings",
+        "Vendor SOC 2 reports on file"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "A1.1",
+      "category": "Availability",
+      "series": "A1",
+      "series_name": "Availability",
+      "title": "Capacity planning and monitoring",
+      "summary": "Capacity is planned and monitored so the system stays available under expected and peak demand.",
+      "typical_evidence": [
+        "Capacity plans and forecasts",
+        "Utilization monitoring and alerts",
+        "Load test results"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "A1.2",
+      "category": "Availability",
+      "series": "A1",
+      "series_name": "Availability",
+      "title": "Backup and recovery procedures",
+      "summary": "Backup and recovery procedures exist and are operated so the system can be restored after a failure.",
+      "typical_evidence": [
+        "Backup procedures and schedules",
+        "Backup success logs",
+        "Recovery runbooks"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "A1.3",
+      "category": "Availability",
+      "series": "A1",
+      "series_name": "Availability",
+      "title": "Recovery plan testing",
+      "summary": "Recovery plans are actually tested, not just written: tests prove restore works within committed timeframes.",
+      "typical_evidence": [
+        "Disaster recovery test plans and results",
+        "RTO and RPO measurements"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "PI1.1",
+      "category": "Processing Integrity",
+      "series": "PI1",
+      "series_name": "Processing Integrity",
+      "title": "Quality information for processing objectives",
+      "summary": "The company defines what good data looks like: data definitions, product specs, and quality requirements for processing.",
+      "typical_evidence": [
+        "Data dictionaries",
+        "Product and service specifications"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "PI1.2",
+      "category": "Processing Integrity",
+      "series": "PI1",
+      "series_name": "Processing Integrity",
+      "title": "Controls over system inputs",
+      "summary": "Inputs are checked for completeness and accuracy before processing: bad data gets caught at the door.",
+      "typical_evidence": [
+        "Input validation rules",
+        "Error and rejection logs",
+        "Reconciliation procedures"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "PI1.3",
+      "category": "Processing Integrity",
+      "series": "PI1",
+      "series_name": "Processing Integrity",
+      "title": "Controls over system processing",
+      "summary": "Processing itself is controlled: authorized, complete, accurate, and timely, with errors detected and corrected.",
+      "typical_evidence": [
+        "Processing controls documentation",
+        "Error detection and correction logs",
+        "Batch and transaction controls"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "PI1.4",
+      "category": "Processing Integrity",
+      "series": "PI1",
+      "series_name": "Processing Integrity",
+      "title": "Controls over system outputs",
+      "summary": "Outputs are complete, accurate, timely, protected, and delivered only to intended parties.",
+      "typical_evidence": [
+        "Output distribution controls",
+        "Output accuracy checks",
+        "Delivery logs"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "PI1.5",
+      "category": "Processing Integrity",
+      "series": "PI1",
+      "series_name": "Processing Integrity",
+      "title": "Controls over stored data",
+      "summary": "Data at rest, inputs in queue, and outputs awaiting delivery are stored completely, accurately, and protected.",
+      "typical_evidence": [
+        "Data storage procedures",
+        "Archive and retention controls",
+        "Storage integrity checks"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "C1.1",
+      "category": "Confidentiality",
+      "series": "C1",
+      "series_name": "Confidentiality",
+      "title": "Identification and protection of confidential information",
+      "summary": "Confidential information is identified when received or created, marked, and protected for its retention period.",
+      "typical_evidence": [
+        "Data classification policy",
+        "Confidential data inventory",
+        "Handling procedures"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "C1.2",
+      "category": "Confidentiality",
+      "series": "C1",
+      "series_name": "Confidentiality",
+      "title": "Disposal of confidential information",
+      "summary": "When retention ends, confidential information is destroyed in a way that prevents recovery.",
+      "typical_evidence": [
+        "Disposal procedures",
+        "Destruction certificates or logs"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P1.1",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Privacy notice to data subjects",
+      "summary": "People are told what you collect, why, and what their rights are, in clear language, before or when you collect it.",
+      "typical_evidence": [
+        "Published privacy notice",
+        "Notice version history",
+        "Evidence of notice delivery"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P2.1",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Choice and consent communication",
+      "summary": "Data subjects are told their choices about collection, use, and disclosure, and consent is obtained where required.",
+      "typical_evidence": [
+        "Consent records",
+        "Opt-in and opt-out mechanisms",
+        "Consent for new purposes"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P3.1",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Collection limited to stated objectives",
+      "summary": "Collection is limited to personal information needed for the stated privacy objectives, gathered fairly and lawfully.",
+      "typical_evidence": [
+        "Data minimization review",
+        "Collection method documentation"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P3.2",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Explicit consent before collecting sensitive information",
+      "summary": "For sensitive personal information, explicit consent is communicated, obtained, and documented before collection.",
+      "typical_evidence": [
+        "Sensitive data consent records",
+        "Consent documentation retention"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P4.1",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Use limited to identified purposes",
+      "summary": "Personal information is used only for the purposes it was collected for, unless law requires otherwise.",
+      "typical_evidence": [
+        "Purpose limitation review",
+        "New-use approval records"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P4.2",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Retention consistent with objectives",
+      "summary": "Personal information is kept no longer than needed for the stated purposes, and protected while retained.",
+      "typical_evidence": [
+        "Retention schedule",
+        "Retention enforcement evidence"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P4.3",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Secure disposal of personal information",
+      "summary": "When personal information is no longer needed, it is anonymized, disposed of, or destroyed so it cannot be recovered.",
+      "typical_evidence": [
+        "Disposal procedures",
+        "Deletion request log",
+        "Destruction verification"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P5.1",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Data subject access to personal information",
+      "summary": "Identified and authenticated individuals can see what personal information you hold about them and get a copy.",
+      "typical_evidence": [
+        "Access request log",
+        "Identity verification procedure",
+        "Response records"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P5.2",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Correction of personal information on request",
+      "summary": "People can correct their personal information, corrections flow to third parties who got the bad data, and denials are explained.",
+      "typical_evidence": [
+        "Correction request log",
+        "Third-party correction notices",
+        "Denial communications"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P6.1",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Third-party disclosure only with consent",
+      "summary": "Personal information goes to third parties only with consent, for the purposes collected, and only to parties with proper agreements.",
+      "typical_evidence": [
+        "Third-party disclosure log",
+        "Data processing agreements",
+        "Consent records for disclosures"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P6.2",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Records of authorized disclosures",
+      "summary": "A complete, accurate, timely record exists of every authorized disclosure of personal information.",
+      "typical_evidence": [
+        "Disclosure register",
+        "Reconciliation of disclosures"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P6.3",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Records of unauthorized disclosures and breaches",
+      "summary": "Detected or reported unauthorized disclosures, including breaches, are recorded completely, accurately, and promptly.",
+      "typical_evidence": [
+        "Breach register",
+        "Detection and reporting records"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P6.4",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Vendor privacy commitments and compliance checks",
+      "summary": "Vendors with access to personal information sign privacy commitments, and their compliance is checked periodically with corrective action when needed.",
+      "typical_evidence": [
+        "Vendor privacy addenda",
+        "Vendor compliance assessments",
+        "Corrective action records"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P6.5",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Vendor breach notification commitments",
+      "summary": "Vendors commit to notify you of actual or suspected unauthorized disclosures, and those notifications reach the right people fast.",
+      "typical_evidence": [
+        "Vendor notification clauses",
+        "Notification handling records"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P6.6",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Breach notification to data subjects and regulators",
+      "summary": "Breaches and incidents are notified to affected people, regulators, and others as required, through an established process.",
+      "typical_evidence": [
+        "Breach notification procedure",
+        "Notification records and timelines"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P6.7",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Accounting of disclosures on request",
+      "summary": "On request, data subjects get an accounting of the personal information held about them and who it was disclosed to.",
+      "typical_evidence": [
+        "Accounting request log",
+        "Response records"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P7.1",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Accuracy and completeness of personal information",
+      "summary": "Personal information collected and kept is accurate, up to date, complete, and relevant for its purpose.",
+      "typical_evidence": [
+        "Data quality checks",
+        "Accuracy review records"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "P8.1",
+      "category": "Privacy",
+      "series": "P",
+      "series_name": "Privacy",
+      "title": "Privacy inquiry and complaint handling",
+      "summary": "There is a real process for privacy questions, complaints, and disputes: intake, resolution, communication, and monitoring for repeat issues.",
+      "typical_evidence": [
+        "Complaint log with resolutions",
+        "Contact channel published in notice",
+        "Compliance monitoring records"
+      ],
+      "priority": "high"
+    }
+  ]
+}
