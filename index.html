@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOC 2 Evidence Checklist | AI Tech Pros</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <h1>SOC 2 Evidence Checklist</h1>
+    <p class="tagline">Track the proof behind every Trust Services Criterion. A SOC 2 audit tests evidence, not intentions.</p>
+    <p class="disclaimer">Readiness aid only. Not an audit, attestation, CPA opinion, or legal advice.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card" id="scope-card">
+    <h2>Engagement scope</h2>
+    <p class="hint">Security (the Common Criteria) applies to every SOC 2. Add the optional categories your company has committed to.</p>
+    <div id="scope-toggles" class="scope-toggles"></div>
+    <div class="toolbar">
+      <label class="filter"><input type="checkbox" id="hide-collected"> Hide collected items</label>
+      <input type="search" id="search" placeholder="Search criteria (e.g., CC6.6, access, privacy)">
+      <button id="import-btn" type="button">Import from Readiness Calculator</button>
+    </div>
+    <div id="import-banner" class="import-banner hidden"></div>
+  </section>
+
+  <section class="card" id="progress-card">
+    <h2>Progress</h2>
+    <div class="overall">
+      <div class="bar"><div class="bar-fill" id="overall-fill"></div></div>
+      <div class="overall-text" id="overall-text"></div>
+    </div>
+    <div id="category-progress"></div>
+  </section>
+
+  <section id="criteria-list"></section>
+
+  <section class="card">
+    <h2>Export</h2>
+    <p class="hint">Download your evidence tracker to share with your team or your auditor.</p>
+    <div class="toolbar">
+      <button id="export-csv" type="button">Download CSV</button>
+      <button id="export-md" type="button">Download Markdown</button>
+      <button id="reset-btn" type="button" class="danger">Reset all data</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="disclaimer">Readiness aid only. Not an audit, attestation, CPA opinion, or legal advice.</p>
+  <p>Built by AI Tech Pros &middot; Dataset: <a href="https://github.com/nehemiah313/tsc-dataset">github.com/nehemiah313/tsc-dataset</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
