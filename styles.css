@@ -129,3 +129,4 @@ footer a { color: var(--accent); }
   .cat-row { grid-template-columns: 1fr; gap: 4px; }
   .cat-row .pct { text-align: left; }
 }
+footer .storage-note { font-size: .8rem; }
